@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="LoginPage_style.css">
+	<title>Pagina de Logare</title>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<button onclick="window.location.href='HomeNelogat.php';" class="cybr-btn">
+  Home<span aria-hidden></span>
+  <span aria-hidden class="cybr-btn__glitch">PANDA</span>
+  <span aria-hidden class="cybr-btn__tag">R25</span>
+  </button>
+
+<p class="title"> MaBOr LogIn Page</p>
+
+<form action="phpLogIn.php" method="post"> 
+   	<p><label for="usernameLogIn">Username:</label>
+   		<input type="text" name="usernameLogIn" id="usernameLogIn" size="20" 
+   		placeholder="Username-ul vostru" /></p>
+
+   	<p><label for="passwordLogIn">Password:</label> 
+      	<input type="password" name="passwordLogIn" id="passwordLogIn" size="20"
+   	    placeholder="Parola" required/></p>
+	
+   	<p>	<a href="HomeLogat.html">
+		<input type="submit" value="Log in"
+        title="Apasati butonul pentru a va loga la site" /></a></p>
+		
+</form> 
+
+<p><button action="trimiteEmail.php" method="post" type = "submit" name="sendMailButton" ><h2>Trimite email</h2></button> </p>
+
+
+<button class="stripe" onclick="window.location.href='RegisterPage.html'; ">
+  REGISTER
+  </button>
+  
+
+</body>
+</html>

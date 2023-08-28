@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="RegisterPage_style.css">
+	<title>Pagina de Inregistrare</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<button onclick="window.location.href='HomeNelogat.php';" class="cybr-btn">
+  <span class="text" aria-hidden>HOME</span>
+  <span aria-hidden class="cybr-btn__glitch">PANDA</span>
+  </button>
+
+<p class="title"> MaBOr Registration Page</p>
+
+<form action="phpRegister.php" method="post"> 
+  <p>	<label for="usernameRegister">Username:</label>
+   	<input type="text" name="usernameRegister" id="usernameRegister" size="20"
+   	placeholder="Username-ul vostru" /></p>
+
+  <p>	<label for="passwordRegister">Password:</label> 
+      <input type="password" name="passwordRegister" id="passwordRegister" size="20"
+   	  placeholder="Parola" required/></p>
+
+	<p>	<label for="repeatPasswordRegister">Repeat Password:</label> 
+		<input type="password" name="repeatPasswordRegister" id="repeatPasswordRegister" size="20"
+		placeholder="Repeta parola" required/></p>
+
+	<p>	<label for="adresaDeEmailRegister">Adresa de email:</label> 
+		<input type="text" name="adresaDeEmailRegister" id="adresaDeEmailRegister" size="20"
+		placeholder="Adresa de email" required/></p>
+  
+  <p>	
+    <a href="LoginPage.html"></a>
+	  <input type="submit" value="Register"
+    title="Apasati butonul pentru a crea contul" /></p>
+
+</form> 
+
+<button class="stripe" onclick="window.location.href='LoginPage.php'; ">
+  BACK TO LOGIN
+  </button>
+
+</body>
+</html>
